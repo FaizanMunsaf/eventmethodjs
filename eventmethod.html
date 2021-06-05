@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Javascript</title>
+</head>
+<body>
+	<form name="example">
+		<input type="text" name="calculator" size="20">
+		<input type="button" name="B1" value="calculator" onclick="cal()">
+		<input type="reset" name="B2" value="reset">
+		Answer:<input type="text" name="answer" size="20">
+	</form>
+	</body>
+
+</html>
+	<script>
+	
+		function cal(){
+			document.example.answer.value= eval(document.example.calculator.value);
+		}
+	</script>
